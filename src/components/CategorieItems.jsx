@@ -3,7 +3,7 @@ import { Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useGetCategoriesQuery } from '../features/category/categoryApi';
 
-function CategoriesLists() {
+function CategorieItems() {
   const { data: categories, isLoading } = useGetCategoriesQuery();
 
   return (
@@ -23,4 +23,4 @@ function CategoriesLists() {
   );
 }
 
-export default CategoriesLists;
+export default CategorieItems;

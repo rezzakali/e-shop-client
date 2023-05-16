@@ -4,9 +4,9 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephoneInbound } from 'react-icons/bs';
 import { GoLocation } from 'react-icons/go';
 import { NavLink } from 'react-router-dom';
+import CategoriesLists from './CategorieItems';
 import InformationsLists from './InformationsLists';
 import SocialMedia from './SocialMedia';
-import CategoriesLists from './categoriesLists';
 
 function Footer() {
   const informationItems = [
