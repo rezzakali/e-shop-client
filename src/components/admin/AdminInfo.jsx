@@ -62,7 +62,9 @@ function AdminInfo() {
               src={
                 profile
                   ? URL.createObjectURL(profile)
-                  : `http://127.0.0.1:9000/api/v1/auth/get-user-profile-image/${_id}`
+                  : `${
+                      import.meta.env.VITE_API_BASE_URL
+                    }/api/v1/auth/get-user-profile-image/${_id}`
               }
               alt="user_profile_image"
               className="object-fit-cover rounded-circle border p-1"

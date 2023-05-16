@@ -203,7 +203,9 @@ function AddProductModal({
           <br />
           {id && (
             <img
-              src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${id}`}
+              src={`${
+                import.meta.env.VITE_API_BASE_URL
+              }/api/v1/products/get-product-image/${id}`}
               alt={name}
               style={{ height: '60px', width: '60px' }}
             />

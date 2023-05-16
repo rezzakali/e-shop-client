@@ -108,7 +108,9 @@ function ProductsTable() {
           <td>{name}</td>
           <td>
             <img
-              src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${id}`}
+              src={`${
+                import.meta.env.VITE_API_BASE_URL
+              }/api/v1/products/get-product-image/${id}`}
               alt={name}
               style={{ height: '40px', width: '40px' }}
             />
