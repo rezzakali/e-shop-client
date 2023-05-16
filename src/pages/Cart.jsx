@@ -132,7 +132,9 @@ function Cart() {
                       <tr key={item._id}>
                         <td>
                           <img
-                            src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${item._id}`}
+                            src={`${
+                              import.meta.env.VITE_API_BASE_URL
+                            }/api/v1/products/get-product-image/${item._id}`}
                             style={{
                               height: '60px',
                               width: '25%',

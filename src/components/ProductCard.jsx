@@ -41,7 +41,7 @@ function ProductCard({ product }) {
         <Link to={`/products/${id}`}>
           <Card.Img
             variant="top"
-            src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${id}`}
+            src={`${import.meta.env.VITE_API_BASE_URL}/api/v1/products/get-product-image/${id}`}
             style={{ height: '300px', width: '100%', objectFit: 'cover' }}
             className="rounded-0"
           />

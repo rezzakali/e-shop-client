@@ -63,7 +63,9 @@ function Navigation() {
             <Dropdown>
               <Dropdown.Toggle className="bg-light text-dark border-0">
                 <img
-                  src={`http://127.0.0.1:9000/api/v1/auth/get-user-profile-image/${user?._id}`}
+                  src={`${
+                    import.meta.env.VITE_API_BASE_URL
+                  }/api/v1/auth/get-user-profile-image/${user?._id}`}
                   alt="user_profile_image"
                   className="object-fit-cover rounded-circle border p-1"
                   style={{
@@ -154,7 +156,9 @@ function Navigation() {
                   <Dropdown className="me-4">
                     <Dropdown.Toggle className="bg-light text-dark border-0">
                       <img
-                        src={`http://127.0.0.1:9000/api/v1/auth/get-user-profile-image/${user._id}`}
+                        src={`${
+                          import.meta.env.VITE_API_BASE_URL
+                        }/api/v1/auth/get-user-profile-image/${user._id}`}
                         alt="user_profile_image"
                         className="object-fit-cover rounded-circle border p-1"
                         style={{

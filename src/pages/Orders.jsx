@@ -113,7 +113,11 @@ function Orders() {
                               <React.Fragment key={index}>
                                 <td>
                                   <img
-                                    src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${product.productId}`}
+                                    src={`${
+                                      import.meta.env.VITE_API_BASE_URL
+                                    }/api/v1/products/get-product-image/${
+                                      product.productId
+                                    }`}
                                     alt="product_image"
                                     style={{
                                       width: '60px',

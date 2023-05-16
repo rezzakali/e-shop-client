@@ -62,7 +62,9 @@ function SingleProduct() {
         <Row className="m-5">
           <Col sm={12} md={4} lg={4}>
             <img
-              src={`http://127.0.0.1:9000/api/v1/products/get-product-image/${id}`}
+              src={`${
+                import.meta.env.VITE_API_BASE_URL
+              }/api/v1/products/get-product-image/${id}`}
               alt="single_product"
               style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
             />
