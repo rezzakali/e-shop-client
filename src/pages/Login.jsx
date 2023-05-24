@@ -117,6 +117,14 @@ function Login() {
           </div>
         </Row>
       </div>
+      
+      <Row>
+        <h5>For Admin Login</h5>
+        <ul style={{ listStyle: 'none' }}>
+          <li>Email:admin@gmail.com</li>
+          <li>Password:admin</li>
+        </ul>
+      </Row>
     </Layout>
   );
 }
